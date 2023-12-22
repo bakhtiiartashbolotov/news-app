@@ -8,4 +8,5 @@ urlpatterns = [
     path("<int:pk>/delete/", ArticleDeleteView.as_view(),name="article_delete"),  # new
     path("new/", ArticleCreateView.as_view(), name="article_new"),
     path("", ArticleListView.as_view(),name="article_list"),
+    
 ]
